@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SalesSectionCell" reuseIdentifier="SalesSectionCell" id="9Si-It-moK" customClass="SalesSectionCell" customModule="MeatProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GSI-ty-dLE">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="202"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CCR-f7-ZDz">
+                        <rect key="frame" x="0.0" y="0.0" width="416" height="202"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YTf-0V-4jm">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CCR-f7-ZDz" firstAttribute="height" secondItem="GSI-ty-dLE" secondAttribute="height" id="4bL-hj-XqF"/>
+                    <constraint firstItem="CCR-f7-ZDz" firstAttribute="centerY" secondItem="GSI-ty-dLE" secondAttribute="centerY" id="6SQ-dL-eBJ"/>
+                    <constraint firstItem="CCR-f7-ZDz" firstAttribute="centerX" secondItem="GSI-ty-dLE" secondAttribute="centerX" id="7a6-FG-cBg"/>
+                    <constraint firstItem="CCR-f7-ZDz" firstAttribute="width" secondItem="GSI-ty-dLE" secondAttribute="width" id="sWp-NO-TWi"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="416" height="202"/>
+            <connections>
+                <outlet property="collectionView" destination="CCR-f7-ZDz" id="n9V-Hf-PM2"/>
+            </connections>
+            <point key="canvasLocation" x="-269.56521739130437" y="28.125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

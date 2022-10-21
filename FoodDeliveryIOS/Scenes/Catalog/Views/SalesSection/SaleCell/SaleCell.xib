@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SaleCell" id="gTV-IL-0wX" customClass="SaleCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImage" translatesAutoresizingMaskIntoConstraints="NO" id="nPI-Gd-z60">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="106"/>
+                        <color key="backgroundColor" name="gray"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZG-5i-Vxl">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="106"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="JZG-5i-Vxl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Hd-XB-ReT"/>
+                <constraint firstItem="nPI-Gd-z60" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IkP-3e-0H6"/>
+                <constraint firstAttribute="bottom" secondItem="nPI-Gd-z60" secondAttribute="bottom" id="Jnk-jf-UsU"/>
+                <constraint firstItem="JZG-5i-Vxl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S5o-TZ-jTE"/>
+                <constraint firstItem="nPI-Gd-z60" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d9a-R4-WDj"/>
+                <constraint firstAttribute="trailing" secondItem="nPI-Gd-z60" secondAttribute="trailing" id="dAQ-uA-emT"/>
+                <constraint firstAttribute="trailing" secondItem="JZG-5i-Vxl" secondAttribute="trailing" id="mpQ-YF-g8F"/>
+                <constraint firstAttribute="bottom" secondItem="JZG-5i-Vxl" secondAttribute="bottom" id="pxU-5i-fcq"/>
+            </constraints>
+            <size key="customSize" width="168" height="83"/>
+            <connections>
+                <outlet property="saleImageView" destination="JZG-5i-Vxl" id="cnu-B2-giJ"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="95.424107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logoImage" width="50" height="50"/>
+        <namedColor name="gray">
+            <color red="0.17599999904632568" green="0.17599999904632568" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

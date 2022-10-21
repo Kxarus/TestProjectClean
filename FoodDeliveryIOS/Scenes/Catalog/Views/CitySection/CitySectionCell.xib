@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CitySectionCell" id="q7X-Pf-JDs" customClass="CitySectionCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8U4-Yk-qKU">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nD-3e-e4c">
+                        <rect key="frame" x="5" y="9" width="93" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="cityButtonIcon" imagePlacement="trailing" title="Москва "/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6nD-3e-e4c" firstAttribute="leading" secondItem="8U4-Yk-qKU" secondAttribute="leading" constant="5" id="2q7-PD-brz"/>
+                    <constraint firstAttribute="bottom" secondItem="6nD-3e-e4c" secondAttribute="bottom" constant="8" id="FZQ-NY-xDK"/>
+                    <constraint firstItem="6nD-3e-e4c" firstAttribute="top" secondItem="8U4-Yk-qKU" secondAttribute="top" constant="9" id="Nge-tZ-fDt"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="335" height="48"/>
+            <connections>
+                <outlet property="city" destination="6nD-3e-e4c" id="wYa-6D-CjY"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="159.375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cityButtonIcon" width="14" height="8"/>
+    </resources>
+</document>
