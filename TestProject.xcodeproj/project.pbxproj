@@ -69,6 +69,15 @@
 		3056D5F52902FA8A00452F84 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D5CE2902FA8900452F84 /* ContactsViewController.swift */; };
 		3056D5F62902FA8A00452F84 /* ContactsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D5CF2902FA8900452F84 /* ContactsModels.swift */; };
 		3056D5F72902FA8A00452F84 /* ContactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D5D02902FA8900452F84 /* ContactsInteractor.swift */; };
+		3056D60E2902FB2400452F84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D5FB2902FB2400452F84 /* UIView.swift */; };
+		3056D60F2902FB2400452F84 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D5FC2902FB2400452F84 /* Realm.swift */; };
+		3056D6132902FB2400452F84 /* SalesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D6052902FB2400452F84 /* SalesResponse.swift */; };
+		3056D6142902FB2400452F84 /* CatalogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D6062902FB2400452F84 /* CatalogResponse.swift */; };
+		3056D6152902FB2400452F84 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D6072902FB2400452F84 /* NetworkService.swift */; };
+		3056D6162902FB2400452F84 /* SalesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D6092902FB2400452F84 /* SalesRequest.swift */; };
+		3056D6172902FB2400452F84 /* CatalogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D60A2902FB2400452F84 /* CatalogRequest.swift */; };
+		3056D6182902FB2400452F84 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D60B2902FB2400452F84 /* APIEndPoint.swift */; };
+		3056D6192902FB2400452F84 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D60D2902FB2400452F84 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +144,15 @@
 		3056D5CE2902FA8900452F84 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		3056D5CF2902FA8900452F84 /* ContactsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsModels.swift; sourceTree = "<group>"; };
 		3056D5D02902FA8900452F84 /* ContactsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsInteractor.swift; sourceTree = "<group>"; };
+		3056D5FB2902FB2400452F84 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		3056D5FC2902FB2400452F84 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		3056D6052902FB2400452F84 /* SalesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesResponse.swift; sourceTree = "<group>"; };
+		3056D6062902FB2400452F84 /* CatalogResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogResponse.swift; sourceTree = "<group>"; };
+		3056D6072902FB2400452F84 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3056D6092902FB2400452F84 /* SalesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesRequest.swift; sourceTree = "<group>"; };
+		3056D60A2902FB2400452F84 /* CatalogRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogRequest.swift; sourceTree = "<group>"; };
+		3056D60B2902FB2400452F84 /* APIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		3056D60D2902FB2400452F84 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		305DDB0B2902DAEC005E2D6D /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915D8431B9774D798AEF121F /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		DD897902E1BFBDFE51858DAF /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +244,7 @@
 		3056D58B2902F90300452F84 /* FoodDeliveryIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3056D5F82902FB2400452F84 /* Core */,
 				3056D58C2902F91F00452F84 /* Scenes */,
 			);
 			path = FoodDeliveryIOS;
@@ -386,6 +405,78 @@
 				3056D5D02902FA8900452F84 /* ContactsInteractor.swift */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		3056D5F82902FB2400452F84 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3056D5F92902FB2400452F84 /* Common */,
+				3056D5FD2902FB2400452F84 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3056D5F92902FB2400452F84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3056D5FA2902FB2400452F84 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3056D5FA2902FB2400452F84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3056D5FB2902FB2400452F84 /* UIView.swift */,
+				3056D5FC2902FB2400452F84 /* Realm.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3056D5FD2902FB2400452F84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3056D6032902FB2400452F84 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3056D6032902FB2400452F84 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3056D6042902FB2400452F84 /* Responses */,
+				3056D6072902FB2400452F84 /* NetworkService.swift */,
+				3056D6082902FB2400452F84 /* Requests */,
+				3056D60B2902FB2400452F84 /* APIEndPoint.swift */,
+				3056D60C2902FB2400452F84 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3056D6042902FB2400452F84 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				3056D6052902FB2400452F84 /* SalesResponse.swift */,
+				3056D6062902FB2400452F84 /* CatalogResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		3056D6082902FB2400452F84 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3056D6092902FB2400452F84 /* SalesRequest.swift */,
+				3056D60A2902FB2400452F84 /* CatalogRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3056D60C2902FB2400452F84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3056D60D2902FB2400452F84 /* Services.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		305DDB022902DAEC005E2D6D = {
@@ -573,11 +664,13 @@
 				3056D5D22902FA8A00452F84 /* ProfileRouter.swift in Sources */,
 				3056D5EE2902FA8A00452F84 /* CardRouter.swift in Sources */,
 				3056D5E62902FA8A00452F84 /* CategoryCell.swift in Sources */,
+				3056D6142902FB2400452F84 /* CatalogResponse.swift in Sources */,
 				3056D5D62902FA8A00452F84 /* ProfileInteractor.swift in Sources */,
 				3056D5E42902FA8A00452F84 /* CategorySectionCell.swift in Sources */,
 				3056D5972902F94600452F84 /* TabBarRouter.swift in Sources */,
 				3056D5D42902FA8A00452F84 /* ProfileModels.swift in Sources */,
 				3056D5F32902FA8A00452F84 /* ContactsPresenter.swift in Sources */,
+				3056D6162902FB2400452F84 /* SalesRequest.swift in Sources */,
 				3056D5E12902FA8A00452F84 /* ProductItemCollectionViewCell.swift in Sources */,
 				3056D5DD2902FA8A00452F84 /* SalesSectionCell.swift in Sources */,
 				3056D5EF2902FA8A00452F84 /* CardModels.swift in Sources */,
@@ -585,13 +678,18 @@
 				3056D5F52902FA8A00452F84 /* ContactsViewController.swift in Sources */,
 				3056D5EC2902FA8A00452F84 /* CardViewController.swift in Sources */,
 				3056D5F22902FA8A00452F84 /* ContactsRouter.swift in Sources */,
+				3056D6152902FB2400452F84 /* NetworkService.swift in Sources */,
 				3056D5D12902FA8A00452F84 /* ProfilePresenter.swift in Sources */,
+				3056D6192902FB2400452F84 /* Services.swift in Sources */,
 				3056D5952902F94600452F84 /* TabBarPresenter.swift in Sources */,
 				3056D5F72902FA8A00452F84 /* ContactsInteractor.swift in Sources */,
 				3056D5D52902FA8A00452F84 /* ProfileViewController.swift in Sources */,
 				3056D5D72902FA8A00452F84 /* CatalogPresenter.swift in Sources */,
+				3056D60E2902FB2400452F84 /* UIView.swift in Sources */,
 				3056D5DB2902FA8A00452F84 /* CatalogWorker.swift in Sources */,
 				3056D5982902F94600452F84 /* TabBarWorker.swift in Sources */,
+				3056D6132902FB2400452F84 /* SalesResponse.swift in Sources */,
+				3056D6172902FB2400452F84 /* CatalogRequest.swift in Sources */,
 				3056D59A2902F94600452F84 /* TabBarConfigurator.swift in Sources */,
 				3056D57D2902F7E500452F84 /* AppDelegate.swift in Sources */,
 				3056D5DA2902FA8A00452F84 /* CatalogInteractor.swift in Sources */,
@@ -599,7 +697,9 @@
 				3056D59B2902F94600452F84 /* TabBarInteractor.swift in Sources */,
 				3056D5962902F94600452F84 /* TabBarModels.swift in Sources */,
 				3056D5EB2902FA8A00452F84 /* CatalogConfigurator.swift in Sources */,
+				3056D6182902FB2400452F84 /* APIEndPoint.swift in Sources */,
 				3056D5ED2902FA8A00452F84 /* CardWorker.swift in Sources */,
+				3056D60F2902FB2400452F84 /* Realm.swift in Sources */,
 				3056D5E92902FA8A00452F84 /* EmptyHeaderCollectionReusableView.swift in Sources */,
 				3056D5F42902FA8A00452F84 /* ContactsWorker.swift in Sources */,
 				3056D57B2902F7E500452F84 /* Constants.swift in Sources */,

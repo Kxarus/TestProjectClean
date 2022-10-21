@@ -28,7 +28,6 @@ final class CatalogInteractor {
     
     // MARK: - Internal vars
     private let service: Services
-    private let realm = RealmService.shared
     
     init(service: NetworkServiceable) {
         self.service = Services(service: service)
@@ -69,7 +68,7 @@ private extension CatalogInteractor {
                 self?.presenter?.presentData(response: .products(response))
             case .failure(let error):
                 print("---\(String(describing: type(of: self))): Error in \(#function) - \(error.code) \(error.message)")
-                let response = Array(self!.realm.read(ProductRM.self))
+//                let response = Array(self!.realm.read(ProductRM.self))
 //                self?.presenter?.presentData(response: .productsRM(response))
             }
         }
@@ -85,7 +84,7 @@ private extension CatalogInteractor {
                 self?.presenter?.presentData(response: .sales(response))
             case .failure(let error):
                 print("---\(String(describing: type(of: self))): Error in \(#function) - \(error.code) \(error.message)")
-                let response = Array(self!.realm.read(SalesRM.self))
+//                let response = Array(self!.realm.read(SalesRM.self))
 //                self?.presenter?.presentData(response: .salesRM(response))
             }
         }

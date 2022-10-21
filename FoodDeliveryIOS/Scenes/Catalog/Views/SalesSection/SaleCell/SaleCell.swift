@@ -30,9 +30,9 @@ extension SaleCell {
         saleImageView.kf.setImage(with: URL(string: model.image ?? ""))
     }
     
-    func setupCellRM(with modelRM: SalesRM) {
-        saleImageView.image = UIImage(data: modelRM.image)
-    }
+//    func setupCellRM(with modelRM: SalesRM) {
+//        saleImageView.image = UIImage(data: modelRM.image)
+//    }
 }
 
 // MARK: - Private methods

@@ -24,7 +24,6 @@ class SalesSectionCell: UICollectionViewCell {
     
     // MARK: - Internal vars
     private var model: [Sales] = []
-    private var modelRM: [SalesRM] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,22 +34,15 @@ class SalesSectionCell: UICollectionViewCell {
 // MARK: - CollectionView Data Source
 extension SalesSectionCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if model.count == 0 {
-            return modelRM.count
-        } else {
-            return model.count
-        }
+        return model.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SaleCell.reuseId, for: indexPath) as? SaleCell else {
             return UICollectionViewCell()
         }
-        if model.count == 0 {
-            cell.setupCellRM(with: modelRM[indexPath.item])
-        } else {
-            cell.setupCell(with: model[indexPath.item])
-        }
+        
+        cell.setupCell(with: model[indexPath.item])
         return cell
     }
 }
@@ -73,11 +65,6 @@ extension SalesSectionCell {
     
     func setupCell(with model: [Sales]) {
         self.model = model
-        collectionView.reloadData()
-    }
-    
-    func setupCellRM(with modelRM: [SalesRM]) {
-        self.modelRM = modelRM
         collectionView.reloadData()
     }
 }

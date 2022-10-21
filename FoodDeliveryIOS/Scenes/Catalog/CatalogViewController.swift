@@ -50,9 +50,9 @@ final class CatalogViewController: UIViewController {
     // MARK: - Internal vars
     private var categories: [CategoryModel] = []
     private var products: [Product] = []
-    private var productsRM: [ProductRM] = []
+//    private var productsRM: [ProductRM] = []
     private var sales: [Sales] = []
-    private var salesRM: [SalesRM] = []
+//    private var salesRM: [SalesRM] = []
     private var selectedIndex = 0
 
     // MARK: - Object lifecycle
@@ -125,7 +125,7 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
         if section == 0 {
-            if sales.count == 0 && salesRM.count == 0 {
+            if sales.count == 0 {
                 return CGSize(width: view.frame.width, height: 0)
             }
         }
@@ -186,13 +186,6 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
                 
                 let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: SalesSectionCell.reuseId, for: indexPath) as! SalesSectionCell
                 
-                if sales.count == 0 && salesRM.count == 0 {
-                    cell.setupCell(with: sales)
-                } else if sales.count == 0 {
-                    cell.setupCellRM(with: salesRM)
-                } else {
-                    cell.setupCell(with: sales)
-                }
                     cell.setupCell(with: sales)
                     return cell
             }
